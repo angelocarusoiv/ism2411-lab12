@@ -2,4 +2,4 @@
 
 Name: Angelo Caruso IV
 
-Command to start: python csv_practice.py
+Command to start: python data\csv_practice.py
