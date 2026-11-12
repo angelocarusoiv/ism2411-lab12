@@ -8,6 +8,10 @@
 # 2: Exercise 8 showed you append mode. Think of a real business process that would benefit from an append-mode log file — describe it and explain why append mode is the right tool.
 # A real business process that would benefit from an append-mode file is an ordering system. It is the right tool because it preserves historical records by adding new entries to the bottom without overwriting past data.
 
+# AI Disclosure:
+# I used Google Gemini (High Thinking Level) to help explain how to import the CSV module, explain errors, and assist in coding for some exercises. I also used GitHub CoPilot to autofill lines.
+
+
 import csv
 import os
 from datetime import datetime
@@ -40,7 +44,7 @@ with open(sales_file, mode="r", encoding="utf-8") as f:
         quantity = int(qty_str)
         row_total = price * quantity
         overall_total += row_total
-        print(f"{product}: {quantity} units × ${price:.2f} = ${row_total:.2f}")
+        print(f"{product}: {quantity} units x ${price:.2f} = ${row_total:.2f}")
 print(f"Overall Total Revenue: ${overall_total:.2f}")
 
 print("=== EXERCISE 5: Filter and write ===")
